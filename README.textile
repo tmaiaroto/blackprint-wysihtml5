@@ -1,4 +1,18 @@
-h1. wysihtml5 0.3.0
+h1. blackprint-wysihtml5 0.5.0
+
+This is a fork of the wysihtml5 project found here: https://github.com/xing/wysihtml5
+
+NOTE: This fork is not supported by XING AG. It is meant for use with the Blackprint CMS and is maintained by Shift8Creative.
+The original README has been left in place for now (it will eventually be updated and replaced).
+
+h3. Building
+
+No longer using the minify.js script in the "build" directory. It didn't seem to work. So instead, using: https://npmjs.org/package/minify
+
+Ensure you install that (npm install -g minify) and then you should be ok. The original build required Node.js anyway. Now you just need to
+ensure you have that package. The Makefile has changed a little bit, but building is the same, just run: make
+
+------------
 
 wysihtml5 is an open source rich text editor based on HTML5 technology and the progressive-enhancement approach.
 It uses a sophisticated security concept and aims to generate fully valid HTML5 markup by preventing unmaintainable tag soups and inline styles.

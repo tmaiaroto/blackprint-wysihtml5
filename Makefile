@@ -2,6 +2,8 @@ VERSION = $(shell cat version.txt)
 
 JS_OUTPUT = "dist/wysihtml5-${VERSION}.js"
 
+JS_MIN_OUTPUT = "dist/wysihtml5-${VERSION}.min.js"
+
 OPEN = $(shell which xdg-open || which gnome-open || which open)
 
 JS_FILES = src/wysihtml5.js \
@@ -73,7 +75,11 @@ JS_FILES = src/wysihtml5.js \
   src/toolbar/dialog.js \
   src/toolbar/speech.js \
   src/toolbar/toolbar.js \
-  src/editor.js
+  src/editor.js \
+  src/blackprint_addons/jquery.mb.browser.min.js \
+  src/blackprint_addons/jquery.webkitresize.js \
+  src/blackprint_addons/commands/insertResizeableImage.js \
+  src/blackprint_addons/config.js
 
 all: bundle minify
 
@@ -87,7 +93,7 @@ bundle:
 
 minify:
 	@@echo "Minifying... (this requires node.js)"
-	@@node build/minify.js ${JS_OUTPUT}
+	@@minify ${JS_OUTPUT} ${JS_MIN_OUTPUT}
 	@@echo "Done."
 
 unittest:

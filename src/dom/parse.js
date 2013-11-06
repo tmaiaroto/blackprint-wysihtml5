@@ -435,7 +435,15 @@ wysihtml5.dom.parse = (function() {
         attributeValue = (attributeValue || "").replace(REG_EXP, "");
         return attributeValue || null;
       };
+    })(),
+
+    style: (function() {
+      var REG_EXP = /[^a-z0-9_\-]\:[^a-z0-9_\-];/gi;
+      return function(attributeValue) {
+        return attributeValue;
+      };
     })()
+
   };
   
   // ------------ class converter (converts an html attribute to a class name) ------------ \\
