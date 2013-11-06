@@ -2,15 +2,19 @@ h1. blackprint-wysihtml5 0.5.0
 
 This is a fork of the wysihtml5 project found here: https://github.com/xing/wysihtml5
 
-NOTE: This fork is not supported by XING AG. It is meant for use with the Blackprint CMS and is maintained by Shift8Creative.
-The original README has been left in place for now (it will eventually be updated and replaced).
+NOTE: This fork is not supported by XING AG. It is meant for use with the Blackprint CMS and is maintained by Shift8Creative. The original README has been left in place for now (it will eventually be updated and replaced).
 
 h3. Building
 
 No longer using the minify.js script in the "build" directory. It didn't seem to work. So instead, using: https://npmjs.org/package/minify
 
-Ensure you install that (npm install -g minify) and then you should be ok. The original build required Node.js anyway. Now you just need to
-ensure you have that package. The Makefile has changed a little bit, but building is the same, just run: make
+Ensure you install that (npm install -g minify) and then you should be ok. The original build required Node.js anyway. Now you just need to ensure you have that package. The Makefile has changed a little bit, but building is the same, just run: make
+
+h3. Quick Install
+
+I've included a bower.json file, so you should just be able to run: bower install https://github.com/tmaiaroto/blackprint-wysihtml5.git
+
+You'll want to include the ```/dist/wysihtml5.min.js``` on your page along with the ```/dist/wysihtml5-ui.css``` for the toolbar styles and such. Then you should be good to go.
 
 ------------
 
