@@ -1,3 +1,9 @@
+*blackprint-wysihtml5 0.5.0* (Nov 6, 2013)
+
+* Support for "style" attribute
+* Resizeable images (style attribute gets set with width and height)
+* Twitter Bootstrap & Font Awesome styled toolbar
+
 *wysihtml5 0.3.0* (May 18, 2012)
 
 * Support for query command groups in toolbar
