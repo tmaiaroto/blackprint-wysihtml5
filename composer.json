@@ -1,0 +1,21 @@
+{
+        "name": "tmaiaroto/blackprint-wysihtml5",
+        "type": "library",
+        "description": "An HTML5 WYSIWYG editor.",
+        "keywords": ["blackprint-wysihtml5", "blackprint", "wysihtml5"],
+        "homepage": "http://github.com/tmaiaroto/blackprint-wysihtml5",
+        "license": "MIT License",
+        "authors": [
+                {
+                        "name": "Tom Maiaroto",
+                        "homepage": "http://www.shift8creative.com"
+                },
+                {
+                        "name": "Xing",
+                        "homepage": "https://github.com/xing/wysihtml5"
+                }
+        ],
+        "require": {
+                "composer/installers": "*"
+        }
+}
