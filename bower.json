@@ -1,0 +1,11 @@
+{
+  "name": "blackprint-wysihtml5",
+  "version": "0.5.0",
+  "main": "./dist/wysihtml5.min.js",
+  "dependencies": {
+  	"jquery": ">= 1.9.0"
+  },
+  "styles": [
+    "./dist/wysihtml5-ui.css"
+  ]
+}

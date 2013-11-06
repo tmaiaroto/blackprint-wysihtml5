@@ -4,6 +4,8 @@ JS_OUTPUT = "dist/wysihtml5-${VERSION}.js"
 
 JS_MIN_OUTPUT = "dist/wysihtml5-${VERSION}.min.js"
 
+JS_CURRENT_VER_MIN_OUTPUT = "dist/wysihtml5.min.js"
+
 OPEN = $(shell which xdg-open || which gnome-open || which open)
 
 JS_FILES = src/wysihtml5.js \
@@ -94,6 +96,7 @@ bundle:
 minify:
 	@@echo "Minifying... (this requires node.js)"
 	@@minify ${JS_OUTPUT} ${JS_MIN_OUTPUT}
+	@@minify ${JS_OUTPUT} ${JS_CURRENT_VER_MIN_OUTPUT}
 	@@echo "Done."
 
 unittest:
